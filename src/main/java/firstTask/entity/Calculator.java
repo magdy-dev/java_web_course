@@ -3,8 +3,6 @@ package firstTask.entity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Objects;
-
 public class Calculator {
     private final Logger logger = LogManager.getLogger(Calculator.class);
 
@@ -15,6 +13,7 @@ public class Calculator {
         if (a == 0) {
             return null;
         }
+
         double desc = Math.pow(b, 2) - 4 * a * c;
         if (desc > 0) {
             x1 = (-b + Math.sqrt(desc)) / (2 * a);
@@ -43,28 +42,29 @@ public class Calculator {
     //____________________________________________________________________________________________________
 
 
-    public double equationNum3(double x, double y){
-        logger.info ("sin(x) + cos(y) * cos(x) + sin(y) * tg(xy)");
-        return Math.sin(x) + Math.cos(y) * Math.cos(x) + Math.sin(y)* Math.tan(x * y);
+    public double equationNum3(double x, double y) {
+        logger.info("sin(x) + cos(y) * cos(x) + sin(y) * tg(xy)");
+        return Math.sin(x) + Math.cos(y) * Math.cos(x) + Math.sin(y) * Math.tan(x * y);
     }
 
     //____________________________________________________________________________________________________
-    public int getOldNumber(double d){
+
+    public int getOldNumber(double d) {
         logger.info("Old Number");
         int length = (int) Math.log10(d) + 1;
-        return (int)(d % length *10);
+        return (int) (d % length * 10);
     }
 
-    public int getYoungNumber(double d){
+    public int getYoungNumber(double d) {
         logger.info("Young Number");
         double num = d * 10;
-        return (int)(num % 10);
+        return (int) (num % 10);
     }
 
 
-    public double areaCircle(double d){
+    public double areaCircle(double d) {
         logger.info("Area Circle");
-        return d*d/4/Math.PI;
+        return d * d / 4 / Math.PI;
 
     }
 
