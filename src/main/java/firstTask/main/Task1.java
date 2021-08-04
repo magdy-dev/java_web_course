@@ -13,6 +13,12 @@ public class Task1 {
 
 
         Scanner scan = new Scanner(System.in);
+        System.out.println("enter  number task\n" +
+                "1_ Calculate the roots of the quadratic equation ax2 + bx + c = 0 with the given coefficients a, b and c (it is assumed\n" +
+                "that a ≠ 0 and that the discriminant of the equation is non-negative).\n" +
+                "2_Create an algorithm for finding the arithmetic mean of two numbers\n" +
+                "3_ Calculate the value of the expression using the formula (all variables take on real values sin *cos \n" +
+                "4_ The circumference is known. Find the area of a circle bounded by this circle");
         int number=scan.nextInt();
         switch (number) {
             case 1:
